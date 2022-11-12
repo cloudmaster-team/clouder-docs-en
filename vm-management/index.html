@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="ru" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -9,18 +9,18 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.9">
     
     
       
-        <title>Работа с ВМ - Документация</title>
+        <title>Manage VMs - Documentation</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.08040f6c.min.css">
         
       
       
@@ -54,7 +54,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     
@@ -66,8 +66,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
-          Перейти к содержанию
+        <a href="#working-with-virtual-machines" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -79,8 +79,8 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href=".." title="Документация" class="md-header__button md-logo" aria-label="Документация" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   <img src="../assets/Frame_21533.svg" alt="logo">
 
@@ -92,13 +92,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Документация
+            Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Работа с ВМ
+              Manage VMs
             
           </span>
         </div>
@@ -109,7 +109,8 @@
         
           
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
@@ -118,7 +119,8 @@
         
           
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
@@ -127,7 +129,8 @@
         
           
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
           
             <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
@@ -145,14 +148,14 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Поиск">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -162,7 +165,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Инициализация поиска
+            Initializing search
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -196,14 +199,14 @@
 
   
 
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Навигация" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Документация" class="md-nav__button md-logo" aria-label="Документация" data-md-component="logo">
+    <a href=".." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   <img src="../assets/Frame_21533.svg" alt="logo">
 
     </a>
-    Документация
+    Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -217,7 +220,7 @@
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Главная
+        Home
       </a>
     </li>
   
@@ -242,14 +245,14 @@
       
       
         <label class="md-nav__link" for="__nav_2">
-          Быстрый старт
+          Quick start
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Быстрый старт" data-md-level="1">
+      <nav class="md-nav" aria-label="Quick start" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Быстрый старт
+          Quick start
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -259,8 +262,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../quick-start/" class="md-nav__link">
-        Основные процессы
+      <a href="../first-steps/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../attach-vms/" class="md-nav__link">
+        Attach VMs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm-users-flow/" class="md-nav__link">
+        VM user guide
       </a>
     </li>
   
@@ -274,7 +305,7 @@
   
     <li class="md-nav__item">
       <a href="../reference/" class="md-nav__link">
-        Основные понятия
+        Reference
       </a>
     </li>
   
@@ -308,14 +339,14 @@
       
       
         <label class="md-nav__link" for="__nav_3">
-          Гайды
+          How-tos
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Гайды" data-md-level="1">
+      <nav class="md-nav" aria-label="How-tos" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          Гайды
+          How-tos
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -325,8 +356,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../clr-connect-cd/" class="md-nav__link">
+        Connect VMware Cloud Director
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../manage-connection/" class="md-nav__link">
-        Подключение облаков
+        Manage cloud connection
       </a>
     </li>
   
@@ -340,7 +385,7 @@
   
     <li class="md-nav__item">
       <a href="../create-subscription/" class="md-nav__link">
-        Создание подписки
+        Create subscription
       </a>
     </li>
   
@@ -354,7 +399,7 @@
   
     <li class="md-nav__item">
       <a href="../vm-transfers/" class="md-nav__link">
-        Перемещение ВМ
+        Move VMs into subscriptions
       </a>
     </li>
   
@@ -377,17 +422,17 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Работа с ВМ
+          Manage VMs
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Работа с ВМ
+        Manage VMs
       </a>
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Содержание раздела">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -396,48 +441,48 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Содержание раздела
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    Создание ВМ
+  <a href="#creating-virtual-machines" class="md-nav__link">
+    Creating Virtual Machines
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    Изменение ВМ
+  <a href="#changing-vms" class="md-nav__link">
+    Changing VMs
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    Действия с ВМ
+  <a href="#actions-with-vms" class="md-nav__link">
+    Actions with VMs
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    Доступ к консоли ВМ
+  <a href="#access-to-vm-console" class="md-nav__link">
+    Access to VM console
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    Создание и восстановление из контрольной точки
+  <a href="#creating-and-restoring-from-a-checkpoint" class="md-nav__link">
+    Creating and restoring from a checkpoint
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    Создание шаблона
+  <a href="#template-creation" class="md-nav__link">
+    Template Creation
   </a>
   
 </li>
@@ -458,7 +503,7 @@
   
     <li class="md-nav__item">
       <a href="../usage-reports/" class="md-nav__link">
-        Отчеты
+        Reports
       </a>
     </li>
   
@@ -486,110 +531,114 @@
                   
 
 
-<h1 id="_1">Работа с виртуальными машинами</h1>
-<h2 id="_2">Создание ВМ</h2>
-<div class="admonition условия">
-<p class="admonition-title">Условия</p>
+<h1 id="working-with-virtual-machines">Working with virtual machines</h1>
+<h2 id="creating-virtual-machines">Creating Virtual Machines</h2>
+<div class="admonition prerequisites">
+<p class="admonition-title">Prerequisites</p>
 <ul>
 <li>
-<p>Пользователь может создать ВМ только в тех <code>Подписках</code>, которые ему доступны. </p>
+<p>User can create a VM only in those <code>Subscriptions</code> that are available to him. </p>
 </li>
 <li>
-<p>ВМ можно создать только в подписке. </p>
+<p>VM can be created only inside subscriptions. </p>
 </li>
 <li>
-<p>В подписке должно быть достаточно свободных ресурсов.</p>
+<p>The subscription must have enough available resources.</p>
 </li>
 <li>
-<p>В подписке должны быть настроены сети.</p>
+<p>In the subscription must be configured with networks.</p>
 </li>
 </ul>
 </div>
-<p>Создать ВМ можно из раздела <strong>Подписки</strong> или из раздела <strong>Ресурсы</strong>.</p>
-<p>В разделе <strong>Подписки</strong>:</p>
+<p>You can create a VM from the <strong>Subscriptions</strong> section or from the <strong>Resources</strong> section.</p>
+<p>In section <strong>Subscriptions</strong>:</p>
 <ol>
-<li>Открыть карточку нужной подписки из списка. Подписка должна иметь статус <em>Активна</em>. </li>
-<li>Вкладка <strong>Ресурсы</strong>. Кликнуть <strong>+</strong>. В открывшемся меню выбрать <strong>Создать новый</strong>.</li>
+<li>Open subscription card by clicking on the line in the list. Subscription must have <em>Active</em> status. </li>
+<li>In the <strong>Resources</strong> tab. Click <strong>+</strong>. In the menu that opens, select <strong>Create new</strong>.</li>
 </ol>
-<p>В разделе <strong>Ресурсы</strong> -&gt; <strong>Виртуальные машины</strong>. В правом верхнем углу кнопка <strong>Добавить ресурс</strong>.</p>
-<p>Машину можно создать на базе шаблонов, либо создать свою конфигурацию машины на базе <code>Образов</code>, доступных в облаке. Образ должен находиться в том же облаке Clouder, где создается машина. Образ из другого облака применить не получится.</p>
-<p>Список доступных образов можно посмотреть в разделе <strong>Образы</strong>.</p>
-<p>Конфигурация машины определяется количеством CPU, RAM, числом, размерами и типами дисков. </p>
+<p>In section  <strong>Resources</strong> -&gt; <strong>Virtual machines</strong>. In the upper right corner click <strong>Add resource</strong>.</p>
+<p>You can create a machine based on template, or create your own machine configuration based on one of the <code>Images</code> available in the cloud. The image must belong to the same cloud connection where the machine is being created. You cannot use an image from another cloud.</p>
+<p>See section <strong>Images</strong> for a list of available images.</p>
+<p>The configuration of your machine is determined by the number of CPUs, RAM, number, sizes and types of disks. </p>
 <blockquote>
-<p>Обратите внимание, что образы ВМ имеют разные потребности в объемах ресурсов.</p>
+<p>Please note that VM images have different resource requirements.</p>
 </blockquote>
-<p>Машине можно подключить одну из доступных в подписке сетей. Доступность сетей определяет <code>Глобальный администратор</code>. Создание и настройка сетей производится штатными инструментами системы виртуализации.</p>
-<p>Создание ВМ занимает некоторое время. Узнать о фоновых процессах можно в ленте процессов, открывается по клику на индикатор активных процессов вверху справа рядом с колокольчиком. </p>
+<p>The machine can be connected to one of the networks available in the subscription. The availability of networks is determined by the <code>Global Administrator</code> in section <strong><em>Networks</em></strong>. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Creating and configuring networks is done with the regular tools of the virtualization system.</p>
+</div>
+<p>Creation of a VM takes some time. You can see all background processes in the process feed, opened by clicking on the indicator of active processes at the top right next to the bell. </p>
 <p><img alt="Screenshot" src="../img/bell-and-loader.png" /></p>
-<p>Когда машина будет создана, в <strong>Уведомлениях</strong> (колокольчик справа вверху), появится соответствующее сообщение.</p>
-<h2 id="_3">Изменение ВМ</h2>
-<p>В разделе <strong>Ресурсы</strong> -&gt; <strong>Виртуальные машины</strong> пользователь может видеть список доступных ему ВМ. При клике на строку открывается карточка ВМ.</p>
-<p>Для редактирования параметров CPU, RAM, Сети - нажмите карандаш в углу карточки.</p>
-<p>Для изменения/удаления диска, наведите на виджет с диском и нажмите <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M64 360c30.9 0 56 25.1 56 56s-25.1 56-56 56-56-25.1-56-56 25.1-56 56-56zm0-160c30.9 0 56 25.1 56 56s-25.1 56-56 56-56-25.1-56-56 25.1-56 56-56zm56-104c0 30.9-25.1 56-56 56S8 126.9 8 96s25.1-56 56-56 56 25.1 56 56z"/></svg></span> и выберите действие — <strong>Удалить</strong> или <strong>Оптимизировать</strong>.</p>
-<p>Для каждой ВМ <code>Владелец</code> может назначить <strong>Ответственного</strong>. Это пользователь, который будет иметь доступ к управлению и изменению ВМ. Выбирается из <code>Операторов</code>, добавленных в выбранную <code>Подписку</code>. </p>
+<p>When the machine is created, a message will appear in <strong>Notifications</strong> (the bell on the top right).</p>
+<h2 id="changing-vms">Changing VMs</h2>
+<p>Under <strong>Resources</strong> -&gt; <strong>Virtual machines</strong> user can see the list of available VMs. Clicking on a line opens a VM card.</p>
+<p>To edit CPU, RAM, Network parameters - click the pencil in the corner of the card.</p>
+<p>To change/delete a disk, hover over the disk widget and click <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M64 360c30.9 0 56 25.1 56 56s-25.1 56-56 56-56-25.1-56-56 25.1-56 56-56zm0-160c30.9 0 56 25.1 56 56s-25.1 56-56 56-56-25.1-56-56 25.1-56 56-56zm56-104c0 30.9-25.1 56-56 56S8 126.9 8 96s25.1-56 56-56 56 25.1 56 56z"/></svg></span> and select the action - <strong>Remove</strong> or <strong>Optimize</strong>.</p>
+<p>For each VM, the <code>Owner</code> can assign a <strong>Person responsible</strong>. This is the user who will have access to the management and modification of VMs.  <strong>Person responsible</strong> is selected from the list of <code>VM users</code> added to the selected <code>Subscription</code>. </p>
 <details>
-<summary>Как назначить ответственного за ВМ</summary>
-<p>Перейдите в раздел <strong>Подписки</strong>. Откройте карточку подписки, где находится ВМ.
-Во вкладке <em>Ресурсы</em> в карточке машины выберите чекбоксом необходимые ВМ. Нажмите на <strong>Назначить ответственного</strong>. </p>
+<summary>How to assign a person responsible for the VMs</summary>
+<p>Go to the section <strong>Subscriptions</strong>. Open the subscription card where the VM is located.
+In the <em>Resources</em> tab of the machine card, select the necessary VMs with a checkbox. Click on <strong>Assign person responsible</strong>. </p>
 </details>
 <p><img alt="screenshot" src="../img/responsible.png" /></p>
 <blockquote>
-<p>Ответственный назначается автоматически, при создании ВМ. В дальнейшем его можно изменить.</p>
+<p>The person responsible is assigned automatically when user creates a VM. Person responsible can be changed later.</p>
 </blockquote>
-<h2 id="_4">Действия с ВМ</h2>
-<div class="admonition условия">
-<p class="admonition-title">Условия</p>
-<p>Пользователь должен иметь доступ к <code>Подписке</code>, где находится машина. Это может быть <code>Владелец</code> или <code>Оператор</code> в статусе <code>Ответственного</code> за ВМ. <code>Глобальный администратор</code> может видеть и осуществлять все операции со всеми машинами вне зависимости от подписок.</p>
+<h2 id="actions-with-vms">Actions with VMs</h2>
+<div class="admonition terms">
+<p class="admonition-title">Terms</p>
+<p>The user must have access to the <code>Subscription</code> where the machine is located. It can be <code>Owner</code> or <code>VM user</code> in the status of <code>Responsible</code> for the VM. The <code>Global Administrator</code> can see and perform all operations on all machines regardless of subscriptions.</p>
 </div>
-<p>Операции с машинами доступны в карточке машины. Найти машину и открыть картоку можно в разделе <strong>Ресурсы</strong> -&gt; <strong>Виртуальные машины</strong> и в разделе <strong>Подписки</strong> в карточке подписки. </p>
-<p>Доступны следующие операции с существующими машинами: </p>
-<p>1) Запуск,
-2) Остановка.</p>
-<div class="admonition ограничение">
-<p class="admonition-title">Ограничение</p>
-<p>Действия по запуску и остановке недоступны для машин в состоянии <em>Ошибка</em>.</p>
+<p>Machine operations are available in the machine card. You can find and open a machine card in <strong>Resources</strong> -&gt; <strong>Virtual machines</strong> and in <strong>Subscriptions</strong> section in the subscription's card. </p>
+<p>The following operations with existing machines are available: </p>
+<p>1) Start,
+2) Stop.</p>
+<div class="admonition restriction">
+<p class="admonition-title">Restriction</p>
+<p>Starting and stopping actions are not available for machines in <em>Error</em> state.</p>
 </div>
-<p>Процессы по запуску и остановке ВМ отражаются в ленте процессов. По результату завершения процесса в центр уведомлений поступает сообщение со статусом.</p>
-<h2 id="_5">Доступ к консоли ВМ</h2>
-<div class="admonition условия">
-<p class="admonition-title">Условия</p>
+<p>Processes for starting and stopping VMs are reflected in the process feed. A status message is sent to the notification feed when the process completes.</p>
+<h2 id="access-to-vm-console">Access to VM console</h2>
+<div class="admonition prerequisites">
+<p class="admonition-title">Prerequisites</p>
 <ul>
 <li>
-<p>Машина должна находиться в статусе <em>Работает</em>,</p>
+<p>The machine should be in the status of <em>Running</em>,</p>
 </li>
 <li>
-<p>Должна быть настроена сетевая связность с <strong>Clouder</strong>.</p>
+<p>Network connection to <strong>Clouder</strong> must be established. It means that Clouder must have access to VM IP and be abble to connect.</p>
 </li>
 </ul>
 </div>
-<p>Операции с машинами доступны в карточке машины. Найти машину и открыть картоку можно в разделе <strong>Ресурсы</strong> -&gt; <strong>Виртуальные машины</strong> и в разделе <strong>Подписки</strong> в карточке подписки. </p>
-<p>Откройте вкладку <em>Консоль</em> и нажмите <strong>Подключиться</strong>.</p>
+<p>Actions with machines are available in the machine card. You can find the machine and open the card under <strong>Resources</strong> -&gt; <strong>Virtual machines</strong> and under <strong>Subscriptions</strong> in the subscription's card. </p>
+<p>While in machine card, open the <em>Console</em> tab and click <strong>Connect</strong>.</p>
 <p><img alt="Screenshot" src="../img/console-access.png" /></p>
-<p><strong>Clouder</strong> позволяет использовать буфер обмена для копирования информации в консоль машины.</p>
-<h2 id="_6">Создание и восстановление из контрольной точки</h2>
-<div class="admonition условия">
-<p class="admonition-title">Условия</p>
-<p>Пользователь должен иметь доступ к <code>Подписке</code>, где находится машина. Это может быть <code>Владелец</code> или <code>Оператор</code> в статусе <code>Ответственного</code> за ВМ. <code>Глобальный администратор</code> может видеть и осуществлять все операции со всеми машинами вне зависимости от подписок.</p>
+<p><strong>Clouder</strong> allows you to use the clipboard to copy information to the machine console.</p>
+<h2 id="creating-and-restoring-from-a-checkpoint">Creating and restoring from a checkpoint</h2>
+<div class="admonition prerequisites">
+<p class="admonition-title">Prerequisites</p>
+<p>The user must have access to the <code>Checkpoint</code> where the machine is located. It can be <code>Owner</code> or <code>VM user</code> in the status of <code>Responsible</code> for the VM. The <code>Global Administrator</code> can see and perform all operations on all machines regardless of subscriptions.</p>
 </div>
-<p>Для облаков на базе <strong><em>Hyper-V</em></strong> и <strong><em>VMware Cloud Director</em></strong> есть возможность создавать контрольные точки и восстанавливать машину из созданной контрольной точки.</p>
-<p>Операции с машинами доступны в карточке машины. Найти машину и открыть картоку можно в разделе <strong>Ресурсы</strong> -&gt; <strong>Виртуальные машины</strong> и в разделе <strong>Подписки</strong> в карточке подписки. </p>
-<p>В карточке машины выберите вкладку <strong><em>Резервное копирование</em></strong>. Кликните <strong>+</strong>, чтобы добавить контрольную точку. </p>
-<p>Создание контрольной точки занимает некоторое время. Узнать о фоновых процессах можно в ленте процессов. Когда контрольная точка будет создана, в <strong>Уведомлениях</strong> (колокольчик справа вверху), появится соответствующее сообщение.</p>
-<div class="admonition внимание">
-<p class="admonition-title">Внимание</p>
-<p>Контрольная точка занимает дисковое пространство. Сейчас Clouder <strong><em>НЕ</em></strong> учитывает занятый объем диска в квоте подписки.</p>
+<p>For clouds based on <strong><em>Hyper-V</em></strong> and <strong><em>VMware Cloud Director</em></strong>, it is possible to create checkpoints and restore a machine from the created checkpoint.</p>
+<p>Machine operations are available in the machine card. You can find and open a machine card under <strong>Resources</strong> -&gt; <strong>Virtual machines</strong> and under <strong>Subscriptions</strong> in the subscription's card. </p>
+<p>In the machine card, select the <strong><em>Backup</em></strong> tab. Click <strong>+</strong> to add a checkpoint. </p>
+<p>It takes some time to create a checkpoint. You can see all background processes in the process feed. When the checkpoint is created, in <strong>Notifications</strong> (the bell at the top right), a corresponding message will appear.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The checkpoint takes disk space. Now Clouder does <strong><em>NOT</em></strong> take into account disk space occupied by checkpoint in the subscription quota.</p>
 </div>
-<p>Аналогично происходит процесс восстановления машины из контрольной точки: во вкладке <strong><em>Резервное копирование</em></strong> выберите иконку восстановления в конце строки нужной контрольной точки.</p>
+<p>Follow similar steps to restore a machine from a checkpoint: in the <strong><em>Backup</em></strong> tab select the restore icon at the end of the row of the checkpoint.</p>
 <p><img alt="Screenshot" src="../img/checkpoint-restore.png" /></p>
-<h2 id="_7">Создание шаблона</h2>
-<div class="admonition условия">
-<p class="admonition-title">Условия</p>
-<p>Пользователь должен иметь доступ к <code>Подписке</code>, где находится машина. Это может быть <code>Владелец</code> или <code>Оператор</code> в статусе <code>Ответственного</code> за ВМ. <code>Глобальный администратор</code> может видеть и осуществлять все операции со всеми машинами вне зависимости от подписок.</p>
-<p>Шаблон может быть создан и применен в том же облаке, где размещена машина.</p>
+<h2 id="template-creation">Template Creation</h2>
+<div class="admonition conditions">
+<p class="admonition-title">Conditions</p>
+<p>The user must have access to the <code>Subscription</code> where the machine is located. It can be <code>Owner</code> or <code>VM user</code> in the status of <code>Person responsible</code> for VMs. The <code>Global Administrator</code> can see and perform all operations on all machines regardless of subscriptions.</p>
+<p>A template can be created and applied in the same cloud where the machine is hosted.</p>
 </div>
-<p>В разделе <strong>Шаблоны</strong> кликните <strong>Создать шаблон</strong>, заполните форму. </p>
-<p>Шаблон будет доступен во всех подписках данного облака Clouder. Шаблоны отображаются в меню создания новой ВМ на базе шаблона.</p>
-<p><code>Шаблон</code> представляет собой образ машины, сохраненный в облаке, и конфигурацию (CPU, RAM и диски). При создании шаблона копирования информации, хранящейся на действующей машине, не происходит.</p>
+<p>Under <strong>Templates</strong> click <strong>Create template</strong>, fill in the form. </p>
+<p>The template will be available in all subscriptions of this cloud connection. Templates are displayed in the menu of creating a new VM based on the template.</p>
+<p>The <code>Template</code> is an image of the machine saved in the cloud and the configuration (CPU, RAM and disks). When you create a template, the information stored on the live machine is not copied.</p>
 
 
 
@@ -607,32 +656,32 @@
         <footer class="md-footer">
   
     
-    <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../vm-transfers/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Перемещение ВМ" rel="prev">
+        <a href="../vm-transfers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Move VMs into subscriptions" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Назад
+                Previous
               </span>
-              Перемещение ВМ
+              Move VMs into subscriptions
             </div>
           </div>
         </a>
       
       
         
-        <a href="../usage-reports/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Отчеты" rel="next">
+        <a href="../usage-reports/" class="md-footer__link md-footer__link--next" aria-label="Next: Reports" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Вперед
+                Next
               </span>
-              Отчеты
+              Reports
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -663,10 +712,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u041f\u043e\u0438\u0441\u043a", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version.title": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
+      <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
   </body>

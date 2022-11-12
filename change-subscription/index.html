@@ -13,7 +13,7 @@
     
     
       
-        <title>Move VMs into subscriptions - Documentation</title>
+        <title>Change subscription - Documentation</title>
       
     
     
@@ -65,11 +65,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#attaching-machines-without-subscriptions" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Move VMs into subscriptions
+              Change subscription
             
           </span>
         </div>
@@ -324,16 +319,14 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -396,55 +389,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Move VMs into subscriptions
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../vm-transfers/" class="md-nav__link">
         Move VMs into subscriptions
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#attaching-machines-without-subscriptions" class="md-nav__link">
-    Attaching machines without subscriptions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#moving-machines-from-one-subscription-to-another" class="md-nav__link">
-    Moving machines from one subscription to another
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -499,33 +448,22 @@
                   
 
 
-  <h1>Move VMs into subscriptions</h1>
+  <h1>Change subscription</h1>
 
-<h2 id="attaching-machines-without-subscriptions">Attaching machines without subscriptions</h2>
-<p>When <strong>Clouder</strong> is connected, there could be virtual machines already be running in the cloud. <strong>Clouder</strong> will detect machines, disks, images and networks. Lists of discovered resources can be found in their respective sections.</p>
-<p><img alt="Screenshot" src="../img_eng/clr-menu-items.png" /></p>
-<p>Purpose of Clouder is to make visible who is responsible for every VM. So we recommend to attach all existing VMs to the subscriptions to track them. </p>
-<p>Please keep in mind that VM without the subscription cannot be modified or managed because Clouder cannot define the person responsible for the VM nor the corresponding resource quota or network.</p>
-<div class="admonition rights">
-<p class="admonition-title">Rights</p>
-<p>You will need <code>Global Administrator</code> rights to perform actions.</p>
+<p>The quota in a <code>Subscription</code> can be increased or decreased. The change is made through a request with the type <code>Change subscription quota</code>.</p>
+<p><img alt="Screenshot" src="../img_eng/new-quota-request.png" /></p>
+<p>After review and approval of the <code>Request</code> by the <code>Global Administrator</code> in the <code>Subscription</code> will change the quota of resources available for deploying new VMs and modifying existing VMs.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Changing the quota is made according to the total cloud quota and the current distribution of resources in the cloud. If the quota for any resource is exhausted, the system will not allow to increase the quota. Keep in mind that some limits could have been set during cloud connection. To check this, open cloud connection tile in the edit mode. </p>
 </div>
-<p>Create a <code>subscription</code> following the instructions of the first steps guide.</p>
-<p>After creating a <code>subscription</code>, in the <strong>Subscriptions</strong> section, select <strong>Create request</strong> and type <code>Attach resources</code>. </p>
-<p>In the drop-down menu select the <code>subscription</code> to which resources will be attached. <strong>+ Resources</strong> and select one or more machines from among the unallocated to subscriptions. </p>
-<p>The request will appear in the list in the status <em>New</em>. Click on the <code>Request</code> to open the request card, click on <strong>Execute</strong>.</p>
-<p>Under <strong>Subscriptions</strong> open the corresponding subscription card, check that the resources are now attached to the subscription.</p>
-<p>The machine configuration will use <code>subscription</code> quota, i.e. the corresponding amount of CPU, RAM and disk space will be displayed as used in the status bar.</p>
-<h2 id="moving-machines-from-one-subscription-to-another">Moving machines from one subscription to another</h2>
-<div class="admonition prerequisites">
-<p class="admonition-title">Prerequisites</p>
-<p>The <code>Global Administrator</code> or <code>Owner</code> privileges of both subscriptions will be required to perform the action.</p>
-<p>The <code>Subscriptions</code> must be in the same cloud connection.</p>
-<p>There must be enough available resources in the <code>subscription (where to)</code>.</p>
+<p>Delete <code>Subscriptions</code> is carried out through the request with <code>Delete subscription</code> type.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Only an empty <code>Subscription</code> with no resources can be deleted. </p>
 </div>
-<p>In the <strong>Subscriptions</strong> section create a request with the type <code>Move resources</code>. Select the <code>subscription (where from)</code> in which the machine or machines are located. Click on <strong>+ Resources</strong> and select the resources available for transfer.</p>
-<p>Select the <code>subscription (where to)</code>. Complete the transfer of a VM to another subscription.</p>
-<p><img alt="screenshot" src="../img_eng/move-subscription.png" /></p>
+<p>You can performe delete VM from the VM card, click on <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M64 360c30.9 0 56 25.1 56 56s-25.1 56-56 56-56-25.1-56-56 25.1-56 56-56zm0-160c30.9 0 56 25.1 56 56s-25.1 56-56 56-56-25.1-56-56 25.1-56 56-56zm56-104c0 30.9-25.1 56-56 56S8 126.9 8 96s25.1-56 56-56 56 25.1 56 56z"/></svg></span>. It is also possible to move a VM to another available <code>Subscription</code> by submitting request <code>Move resources</code>. </p>
+<p>The <code>Move resources</code> can refer to any amount of the VMs in the subscription: specify the <code>Subscription (where from)</code>, click <strong>+ Resources</strong>, select all the VMs, and specify the <code>Subscription (where to)</code>.</p>
 
 
 
@@ -541,42 +479,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../create-subscription/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create subscription" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Create subscription
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../vm-management/" class="md-footer__link md-footer__link--next" aria-label="Next: Manage VMs" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Manage VMs
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

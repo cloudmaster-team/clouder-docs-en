@@ -13,7 +13,7 @@
     
     
       
-        <title>Move VMs into subscriptions - Documentation</title>
+        <title>Getting started - Documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#attaching-machines-without-subscriptions" class="md-skip">
+        <a href="#connect-your-cloud" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Move VMs into subscriptions
+              Getting started
             
           </span>
         </div>
@@ -232,14 +232,16 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -260,11 +262,69 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../first-steps/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Getting started
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#connect-your-cloud" class="md-nav__link">
+    Connect your cloud
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-users" class="md-nav__link">
+    Create users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-new-subscription" class="md-nav__link">
+    Create a new subscription
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subscription-setup" class="md-nav__link">
+    Subscription setup
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -324,16 +384,14 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -396,55 +454,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Move VMs into subscriptions
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../vm-transfers/" class="md-nav__link">
         Move VMs into subscriptions
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#attaching-machines-without-subscriptions" class="md-nav__link">
-    Attaching machines without subscriptions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#moving-machines-from-one-subscription-to-another" class="md-nav__link">
-    Moving machines from one subscription to another
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -499,33 +513,81 @@
                   
 
 
-  <h1>Move VMs into subscriptions</h1>
+  <h1>Getting started</h1>
 
-<h2 id="attaching-machines-without-subscriptions">Attaching machines without subscriptions</h2>
-<p>When <strong>Clouder</strong> is connected, there could be virtual machines already be running in the cloud. <strong>Clouder</strong> will detect machines, disks, images and networks. Lists of discovered resources can be found in their respective sections.</p>
-<p><img alt="Screenshot" src="../img_eng/clr-menu-items.png" /></p>
-<p>Purpose of Clouder is to make visible who is responsible for every VM. So we recommend to attach all existing VMs to the subscriptions to track them. </p>
-<p>Please keep in mind that VM without the subscription cannot be modified or managed because Clouder cannot define the person responsible for the VM nor the corresponding resource quota or network.</p>
-<div class="admonition rights">
-<p class="admonition-title">Rights</p>
-<p>You will need <code>Global Administrator</code> rights to perform actions.</p>
+<h2 id="connect-your-cloud">Connect your cloud</h2>
+<p>Log in to Astrokite as a <code>Global Administrator</code>. Click on <img alt="⚙" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2699.svg" title=":gear:" /> in the upper right corner, select <strong>Manage cloud connections</strong> and then select a virtualization option.</p>
+<p>Clouder supports Hyper-V and VMware Cloud Director.</p>
+<p><img alt="Screenshot" src="../img_eng/connect-cloud-add-users.png" />
+<img alt="Screenshot" src="../img_eng/choose-clouds.png" /></p>
+<p>For each virtualization system, you will be prompted to fill out the necessary authorization data.</p>
+<p>After successful authentication and authorization, Astrokite will start scanning the infrastructure. Found resources will become visible in the <strong>Resources</strong> and <strong>Networks</strong> pages.</p>
+<p>Expect that the list of virtual machines will be loaded within 5-10 minutes.</p>
+<h2 id="create-users">Create users</h2>
+<p>Clouder supports following roles:</p>
+<ul>
+<li><strong>Global administrator</strong> is a user with maximum rights and access to all settings, sections and product features.</li>
+<li><strong>Owner</strong> is a user with rights to manage <em>Subscriptions</em> who can create, modify, delete and perform other operations with them, as well as manage VMs within Subscriptions and users who have access to them.</li>
+<li><strong>VM user</strong> is a user who has the ability to create and manage VMs within the available Subscriptions.</li>
+</ul>
+<blockquote>
+<p>A Global administrator can manage existing users and create a new one 
+in the section <strong>Users and roles</strong> (<img alt="⚙" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2699.svg" title=":gear:" /> in the upper right corner). </p>
+</blockquote>
+<p>Add roles both for Clouder and Coster to avoid conflicts. Currently both modules should be configured. Admninistration roles in Astrokite give access to cloud connection and user management menu.</p>
+<p><img alt="Screenshot" src="../img_eng/create-user.png" /></p>
+<p>A temporary password will be emailed to the new user to access Clouder.
+Users can change their own password by clicking on the avatar in the upper right corner. The password must meet the complexity requirements:</p>
+<ul>
+<li>be at least 8 characters long,</li>
+<li>include uppercase and lowercase letters,</li>
+<li>include digits,</li>
+<li>include special symbols.</li>
+</ul>
+<h2 id="create-a-new-subscription">Create a new subscription</h2>
+<p>Users with <code>Owner</code> or <code>Global Administrator</code> privileges can create requests for <code>Subscriptions</code> with resource quotas.</p>
+<p>All subscriptions are created via requests. This is a build-in mechanism for logging and complience. </p>
+<p>User who has created the request will become <code>owner</code> of the subscription if the request will be executed.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Each <code>Subscription</code> refers to only one cloud connection. That is, you cannot combine resources from different cloud connections.</p>
 </div>
-<p>Create a <code>subscription</code> following the instructions of the first steps guide.</p>
-<p>After creating a <code>subscription</code>, in the <strong>Subscriptions</strong> section, select <strong>Create request</strong> and type <code>Attach resources</code>. </p>
-<p>In the drop-down menu select the <code>subscription</code> to which resources will be attached. <strong>+ Resources</strong> and select one or more machines from among the unallocated to subscriptions. </p>
-<p>The request will appear in the list in the status <em>New</em>. Click on the <code>Request</code> to open the request card, click on <strong>Execute</strong>.</p>
-<p>Under <strong>Subscriptions</strong> open the corresponding subscription card, check that the resources are now attached to the subscription.</p>
-<p>The machine configuration will use <code>subscription</code> quota, i.e. the corresponding amount of CPU, RAM and disk space will be displayed as used in the status bar.</p>
-<h2 id="moving-machines-from-one-subscription-to-another">Moving machines from one subscription to another</h2>
-<div class="admonition prerequisites">
-<p class="admonition-title">Prerequisites</p>
-<p>The <code>Global Administrator</code> or <code>Owner</code> privileges of both subscriptions will be required to perform the action.</p>
-<p>The <code>Subscriptions</code> must be in the same cloud connection.</p>
-<p>There must be enough available resources in the <code>subscription (where to)</code>.</p>
+<ol>
+<li>On <strong>Subscription</strong> page click <strong>New subscription</strong>. Window <em>Create request</em> will open on the right. Type of the request is <em>Create susbcription</em>. </li>
+<li>In this menu specify the required resource quota volumes.</li>
+</ol>
+<p><img alt="Screenshot" src="../img_eng/request-for-the-new-sbscription.png" /></p>
+<p><code>Global Administrator</code> will receive the <em>Request</em> and will be able to execute or reject it. </p>
+<p><img alt="Screenshot" src="../img_eng/request-status-new.png" /></p>
+<p>If the request is executed, the <code>Subscription</code> will be created and displayed under <strong>Subscriptions</strong>.</p>
+<p>The <code>Global Administrator</code> must add networks to the subscription, in which it is allowed to create VMs. </p>
+<ol>
+<li>Open <strong>Subscriptions</strong>. Click active subscription to open the subscription card.</li>
+<li>Inside subscription card open <strong>Networks</strong> tab. </li>
+</ol>
+<p><img alt="Screenshot" src="../img_eng/subscription-card-networks-users.png" /></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Add networks to the subscription so that users can create machines. Check that the following conditions are met:</p>
+<ul>
+<li>
+<p>the network must be active under <strong>Resources</strong> -&gt; <strong>Networks</strong>,</p>
+</li>
+<li>
+<p>the network must be present in the Clouder cloud on which the subscription has been created.</p>
+</li>
+</ul>
 </div>
-<p>In the <strong>Subscriptions</strong> section create a request with the type <code>Move resources</code>. Select the <code>subscription (where from)</code> in which the machine or machines are located. Click on <strong>+ Resources</strong> and select the resources available for transfer.</p>
-<p>Select the <code>subscription (where to)</code>. Complete the transfer of a VM to another subscription.</p>
-<p><img alt="screenshot" src="../img_eng/move-subscription.png" /></p>
+<h2 id="subscription-setup">Subscription setup</h2>
+<p>Once the request has been completed, the subscription <code>Owner</code> will see the subscription in the <strong>Subscriptions</strong> section. In the subscription card, <code>Global admin</code> or <code>Owner</code> can add the <code>VM users</code>. <code>VM users</code> are registered Astrokite users from the same tenant. </p>
+<p><code>VM users</code> added to the subscription will be able to use resource quotas to create VMs. To add VM users to your subscription open tab <strong>VM users</strong> in the subscription card.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Make sure that there are available networks in the subscription. 
+Only the <code>Global Administrator</code> can add a network to create machines. Without a network, machines will not be created.</p>
+</div>
+<p>Now your subscription owners can manage subscriptions and VM users can use quotas. </p>
+<p><strong>Next steps:</strong> match existing VMs with subscriptions, create and manage VMs.</p>
 
 
 
@@ -546,7 +608,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../create-subscription/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create subscription" rel="prev">
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -555,20 +617,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Create subscription
+              Home
             </div>
           </div>
         </a>
       
       
         
-        <a href="../vm-management/" class="md-footer__link md-footer__link--next" aria-label="Next: Manage VMs" rel="next">
+        <a href="../attach-vms/" class="md-footer__link md-footer__link--next" aria-label="Next: Attach VMs" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Manage VMs
+              Attach VMs
             </div>
           </div>
           <div class="md-footer__button md-icon">
