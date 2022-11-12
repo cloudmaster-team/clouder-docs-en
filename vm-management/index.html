@@ -481,8 +481,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#template-creation" class="md-nav__link">
-    Template Creation
+  <a href="#create-template" class="md-nav__link">
+    Create template
   </a>
   
 </li>
@@ -559,14 +559,14 @@
 <p>In section  <strong>Resources</strong> -&gt; <strong>Virtual machines</strong>. In the upper right corner click <strong>Add resource</strong>.</p>
 <p>You can create a machine based on template, or create your own machine configuration based on one of the <code>Images</code> available in the cloud. The image must belong to the same cloud connection where the machine is being created. You cannot use an image from another cloud.</p>
 <p>See section <strong>Images</strong> for a list of available images.</p>
-<p>The configuration of your machine is determined by the number of CPUs, RAM, number, sizes and types of disks. </p>
+<p>The configuration of your machine is determined by the number of CPUs, RAM, number, types and size of the attached disks. </p>
 <blockquote>
 <p>Please note that VM images have different resource requirements.</p>
 </blockquote>
-<p>The machine can be connected to one of the networks available in the subscription. The availability of networks is determined by the <code>Global Administrator</code> in section <strong><em>Networks</em></strong>. </p>
+<p>The machine can be connected to one of the networks available in the subscription. The availability of networks is determined by the <code>Global Administrator</code>. You can check networks available in the subscription in the tab <strong><em>Networks</em></strong>. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Creating and configuring networks is done with the regular tools of the virtualization system.</p>
+<p>To create and configure networks regular tools of the virtualization system must be used.</p>
 </div>
 <p>Creation of a VM takes some time. You can see all background processes in the process feed, opened by clicking on the indicator of active processes at the top right next to the bell. </p>
 <p><img alt="Screenshot" src="../img/bell-and-loader.png" /></p>
@@ -630,9 +630,9 @@ In the <em>Resources</em> tab of the machine card, select the necessary VMs with
 </div>
 <p>Follow similar steps to restore a machine from a checkpoint: in the <strong><em>Backup</em></strong> tab select the restore icon at the end of the row of the checkpoint.</p>
 <p><img alt="Screenshot" src="../img/checkpoint-restore.png" /></p>
-<h2 id="template-creation">Template Creation</h2>
-<div class="admonition conditions">
-<p class="admonition-title">Conditions</p>
+<h2 id="create-template">Create template</h2>
+<div class="admonition prerequisites">
+<p class="admonition-title">Prerequisites</p>
 <p>The user must have access to the <code>Subscription</code> where the machine is located. It can be <code>Owner</code> or <code>VM user</code> in the status of <code>Person responsible</code> for VMs. The <code>Global Administrator</code> can see and perform all operations on all machines regardless of subscriptions.</p>
 <p>A template can be created and applied in the same cloud where the machine is hosted.</p>
 </div>
